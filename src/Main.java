@@ -4,16 +4,18 @@ public class Main {
 
     String nome;
 
-   
-    public static void main(String[] args) {
-    }
-        void declaraNome(){
-            nome = "Kalliana";
-        }
+   static String nome2;
 
-        String getNome() {
-            return nome;
-        }
+    public static void main(String[] args) {
+        System.out.println(nome2);
+    }
+        // void declaraNome(){
+        //     nome = "Kalliana";
+        // }
+
+        // String getNome() {
+        //     return nome;
+        // }
 
 
         byte b = 100;
@@ -65,4 +67,17 @@ public class Main {
         // idade1 = Integer.parseInt(nome2);
 
 
+        public Main(String nome) {
+            this.nome = nome;
+        }
+        public Main(String nome, int idade) {
+            this.nome = nome;
+            this.idade = idade;
+        }
+}
+
+class Pessoa {
+    void criaMain(){
+        Main meuMain = new Main("Kalliana");
+    }
 }
