@@ -10,13 +10,18 @@ public class Main {
 
     public static void main(String[] args) {
         // System.out.println(nome2);
+        Ser meuSerAnimal = new Cachorro("Rex", 5, "Kalliana");
+        Ser meuSerPessoa = new Pessoa("Kalliana", 25, "Glaeser");
 
+        meuSerAnimal.setNome("Rex");
+        System.out.println(meuSerAnimal.saudacao());
+        System.out.println(meuSerPessoa.saudacao());
     }
 
     private void atualizaSalary() {
         this.salary = 1000;
     }
-    
+
     public int getSalary() {
         this.atualizaSalary();
         return this.salary;
