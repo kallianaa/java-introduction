@@ -4,11 +4,23 @@ public class Main {
 
     String nome;
 
-   static String nome2;
+    protected int salary;
+
+//    static String nome2;
 
     public static void main(String[] args) {
-        System.out.println(nome2);
+        // System.out.println(nome2);
+
     }
+
+    private void atualizaSalary() {
+        this.salary = 1000;
+    }
+    
+    public int getSalary() {
+        this.atualizaSalary();
+        return this.salary;
+    }    
         // void declaraNome(){
         //     nome = "Kalliana";
         // }
@@ -67,17 +79,12 @@ public class Main {
         // idade1 = Integer.parseInt(nome2);
 
 
-        public Main(String nome) {
-            this.nome = nome;
-        }
-        public Main(String nome, int idade) {
-            this.nome = nome;
-            this.idade = idade;
-        }
+//        public Main(String nome) {
+//            this.nome = nome;
+//        }
+//        public Main(String nome, int idade) {
+//            this.nome = nome;
+//            this.idade = idade;
+//        }
 }
 
-class Pessoa {
-    void criaMain(){
-        Main meuMain = new Main("Kalliana");
-    }
-}
